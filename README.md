@@ -5,6 +5,9 @@
 - [projectOverview](#project-overview)
 - [Dataset](#Dataset)
 - [ProjectObjectives](#Project-Objectives)
+- [Skills&ToolsUsed](#Skills&Tools-Used)
+- [AnalysisPerformed](#Analysis-Performed)
+- 
 
 
 
@@ -29,7 +32,7 @@ The focus is on customer behavior and sales performance, using SQL queries to ex
 	•	Practice SQL joins across multiple tables
 	•	Apply filtering, grouping, and aggregation techniques
 	
- ### Skills & Tools Used
+### Skills & Tools Used
 - SQL Server
 - SQL JOINs
 - Aggregates (SUM, AVG, COUNT)
