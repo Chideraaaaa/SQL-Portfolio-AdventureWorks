@@ -7,6 +7,8 @@
 - [ProjectObjectives](#Project-Objectives)
 - [Skills&ToolsUsed](#Skills&Tools-Used)
 - [AnalysisPerformed](#Analysis-Performed)
+- [KeyInsights](#Key-Insights)
+- [Conclusion](#Conclusion)
 
 ---
 ### Project Overview
