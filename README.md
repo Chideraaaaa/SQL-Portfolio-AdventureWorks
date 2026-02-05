@@ -8,10 +8,8 @@
 - [Skills&ToolsUsed](#Skills&Tools-Used)
 - [AnalysisPerformed](#Analysis-Performed)
 
-
-
-### Project Overview
 ---
+### Project Overview
 
 This project demonstrates SQL skills using the AdventureWorks sample database.
 The focus is on customer behavior and sales performance, using SQL queries to extract, filter, aggregate, and analyze relational data.
@@ -41,7 +39,7 @@ The focus is on customer behavior and sales performance, using SQL queries to ex
 ### Analysis Performed
 
 #### 1. Customer Order Details
-Objective: Display each customer’s full name, their sales order ID, and the total amount due.f
+**Objective:** Display each customer’s full name, their sales order ID, and the total amount due.f
 ```sql
 SELECT PP.FIRSTNAME, PP.LASTNAME,PP.DEMOGRAPHICS,SC.STOREID,
 SC.TerritoryID,SC.AccountNumber 
@@ -54,7 +52,7 @@ ON PP.BusinessEntityID = SC.CUSTOMERID;
 - Retrieved customer names, order IDs, and total due amounts
 	
 #### 2. Customers with Last Name Ending in ‘s’ and High Sales
-Objective: List customers whose last name ends with “s” and whose total sales exceed 20,000.
+**Objective:** List customers whose last name ends with “s” and whose total sales exceed 20,000.
 ```sql
 SELECT p.FirstName, p.LastName AS CustomerName, SUM(soh.TotalDue) AS TotalSales
 FROM Sales.Customer c
@@ -70,7 +68,7 @@ ORDER BY TotalSales DESC;
 -  Used GROUP BY and HAVING to find customers with total sales above 20,000
 
 #### 3. Top Customers by Total Sales
-Objective: Find the top 8 customers with the highest total sales.
+**Objective:** Find the top 8 customers with the highest total sales.
 ```sql
 SELECT TOP 8 p.FirstName + ' ' + p.LastName AS CustomerName, SUM(soh.TotalDue) AS TotalSales
 FROM Sales.Customer c
@@ -84,7 +82,7 @@ ORDER BY TotalSales DESC;
 - Sorted in descending order to identify top-performing customers
 
 #### 4. Customers with Four-Letter First Names & Multiple Orders
-Objective: Find customers whose first name has exactly 4 letters and who have placed more than one order.
+**Objective:** Find customers whose first name has exactly 4 letters and who have placed more than one order.
 ```sql
 SELECT p.FirstName, p.LastName, COUNT(soh.SalesOrderID) AS OrderCount
 FROM Sales.Customer c
@@ -108,7 +106,7 @@ JOIN Sales.SalesOrderHeader soh ON c.CustomerID = soh.CustomerID
 WHERE soh.TotalDue < 35000
 GROUP BY p.FirstName, p.LastName;
 ```
-**Explanation**;
+**Explanation**:
 - Filtered orders below 35,000
 - Calculated average order value per customer to analyze purchasing behavior
 
@@ -118,11 +116,11 @@ GROUP BY p.FirstName, p.LastName;
 	•	Repeat customers place multiple orders, indicating loyalty
 	•	Filtering and aggregation help identify high-value customer segment
 
-
-
-
-
-
+### Conclusion
+    This project demonstrates my ability to:
+	•	Write clean SQL queries
+	•	Work with relational databases
+	•	Analyze data and extract actionable insights
 
 
 
